@@ -1,0 +1,66 @@
+/* freeCodeCamp.css - styles specific to freeCodeCamp page */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: linear-gradient(180deg,#f7f9fc 0%, #eef4fb 100%);
+    padding: 0 10px 40px;
+}
+header{
+    background: #1f3a57;
+    color: #fff;
+    padding: 18px 10px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+header h1{font-size:1.6rem}
+nav{margin:18px 0;padding:12px}
+nav h2{color:#1f3a57;margin-bottom:10px;font-size:1.15rem}
+.category-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:12px}
+.category-list > li{background:linear-gradient(90deg,#ffffffcc,#f0f6ffcc);padding:12px;border-radius:6px;border:1px solid rgba(31,58,87,0.06)}
+.category-list h3{margin:0 0 8px 0;color:#13324a}
+
+/* Ensure nested project lists are vertical and not affected by global nav ul {display:flex} */
+.category-list .projects-list,
+nav .projects-list {
+    display: block !important; /* override global flex */
+    list-style: none; /* remove default markers (removes the stray "1.") */
+    margin: 8px 0 0 0;
+    padding-left: 0; /* we will style bullets or spacing ourselves if needed */
+}
+
+/* Visual small bullets using pseudo-element for clarity */
+.category-list .projects-list li{
+    display: block;
+    margin: 8px 0;
+    padding-left: 14px;
+    position: relative;
+    white-space: normal; /* allow wrapping */
+}
+.category-list .projects-list li::before{
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    color: #1f3a57;
+    font-size: 1.05em;
+    line-height: 1;
+}
+
+.projects-list a{
+    color:#1f3a57;
+    text-decoration:none;
+    padding:8px 10px; /* un peu plus d'espace pour lisibilité */
+    border-radius:4px;
+    display:block; /* change: un lien par ligne pour éviter chevauchement */
+}
+.projects-list a:hover{background:#dbeaf6;text-decoration:underline}
+footer{margin-top:22px;text-align:center;color:#666}
+/* Responsive */
+@media(min-width:720px){
+    .category-list{flex-direction:row}
+    .category-list > li{flex:1}
+}
