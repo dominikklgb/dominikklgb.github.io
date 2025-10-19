@@ -1,0 +1,40 @@
+body {
+    background-color: rosybrown;
+    font-family: Arial, sans-serif;
+}
+p {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+a {
+    text-decoration:none;
+    color:brown;
+}
+a:hover {
+    text-decoration:none;
+    color:rgb(101, 65, 65);
+}
+.business-card {
+    width: 300px;
+    background-color:#ffe4e3;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    text-align: center;
+}
+.profile-image {
+    max-width: 100%;
+}
+.social-media a {
+    color: #798897;
+}
+.social-media a:hover {
+    color: #464d54;
+}
+footer {
+    margin-top:22px;
+    text-align:center;
+    color:#666
+}

@@ -1,5 +1,6 @@
-/* freeCodeCamp.css - styles specific to freeCodeCamp page */
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -63,4 +64,10 @@ footer{margin-top:22px;text-align:center;color:#666}
 @media(min-width:720px){
     .category-list{flex-direction:row}
     .category-list > li{flex:1}
+}
+nav ul a span {
+    border: #acd157 2px solid;
+    color: #acd157;
+    padding: 1px 6px 2px;
+    font-family: Lato, sans-serif;
 }

@@ -5,7 +5,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #f4f4f4; */
+    background: linear-gradient(180deg,#f7f9fc 0%, #eef4fb 100%);
     color: #333;
     line-height: 1.6;
 }
