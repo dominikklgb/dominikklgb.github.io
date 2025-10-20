@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Lab CSS Project 2</title>
-</head>
-<body>
-  <h1>Lab CSS Project 2</h1>
-  <p>Placeholder page.</p>
-  <p><a href="../../freeCodeCamp.html">Back to Projects</a></p>
-</body>
-</html>
 
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+
+<body>
+    <main>
+    <h1>Ma liste de choses à faire</h1>
+    <ul class="todo-list">
+        <li>
+            <input type="checkbox" id="montage">
+            <label for="montage">Faire le montage de la vidéo sur Auschwitz</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://www.adobe.com/" target="_blank">Télécharger Adobe</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="courses">
+            <label for="courses">Faire les courses</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://www.carrefour.fr/" target="_blank">Carrefour</a>
+                </li>
+                <li>
+                    <a class="sub-item-link" href="https://www.auchandrive.fr/" target="_blank">Auchan Drive</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="pronote">
+            <label for="pronote">Créer un rapport sur Pronote pour le CVL</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://www.ent.auvergnerhonealpes.fr/" target="_blank">ENT AURA</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="gpu">
+            <label for="gpu">Acheter une nouvelle carte graphique</label>
+            <ul class="sub-item">
+                <li>
+                    <a href="https://www.dealabs.com/" target="_blank" class="sub-item-link">
+                        Dealabs
+                    </a>
+                </li>
+            </ul>
+                    
+        </li>
+    </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dominik Klingenberg. All rights reserved.</p>
+        <p>Go to <a href="../../freeCodeCamp.html">Projects Page</a></p>
+    </footer>
+
+</body>
+
+</html>
