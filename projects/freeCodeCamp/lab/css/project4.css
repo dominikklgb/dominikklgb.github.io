@@ -72,3 +72,16 @@ footer {
     text-align:center;
     color:#666
 }
+
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 90vw;
+    }
+
+    section {
+        display: block;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}
