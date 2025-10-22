@@ -7,9 +7,9 @@
 .blog-post-card {
     background-color: white;
     border-radius: 15px;
-    width: 70%;
+    width: 50%;
     text-align: center;
-    margin: 20% auto;
+    margin: 5% auto;
     box-shadow: 4px 4px 8px #aaa;
 }
 .post-img {
